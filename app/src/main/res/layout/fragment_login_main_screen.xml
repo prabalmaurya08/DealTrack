@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".loginMainScreen.LoginMainScreen">
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/login_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/app_icon"
+
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Bottom CardView that should appear below the LinearLayout -->
+    <com.google.android.material.card.MaterialCardView
+android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_ll"
+        app:cardCornerRadius="30dp"
+
+        android:elevation="13dp"
+        android:backgroundTint="@color/white"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         android:paddingHorizontal="16dp"
+            >
+
+            <!-- TextView -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:fontFamily="@font/sf_pro_display_bold"
+               android:layout_marginTop="30dp"
+
+
+                android:textSize="24sp"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <!-- TabLayout for login (Wholesaler/Retailer) -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/login_tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:background="@drawable/login_tab_stroke_bg"
+
+                app:tabGravity="center"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Login tab layout, allows selection between Patient and Doctor"
+
+
+                app:tabMode="fixed"
+                app:tabIndicatorHeight="0dp"
+                style="@style/CustomTabLayoutStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tabRippleColor="@null"
+                app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+            <!-- ViewPager for login fragments -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/login_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/login_tabLayout"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>

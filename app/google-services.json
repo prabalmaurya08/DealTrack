@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812139755715",
+    "project_id": "dealtrack-8406d",
+    "storage_bucket": "dealtrack-8406d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812139755715:android:5a8a00197d8ea3ece38a76",
+        "android_client_info": {
+          "package_name": "com.example.dealtrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB6T__8kU7JwPNJW0E1fQTuBarfGMUk7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    // Color Variables
+
+    //Orange
+    <color name="Orange1">#FFAE00</color>
+    <color name="Orange2">#FE8E22</color>
+    <color name="Orange3">#FFA451</color>
+    <color name="Orange4">#FFB76B</color>
+    <color name="Orange5">#FFCF91</color>
+
+    //Green
+    <color name="Green1">#1E8C45</color>
+    <color name="Green2">#3AA346</color>
+    <color name="Green3">#58BB44</color>
+    <color name="Green4">#78D23D</color>
+    <color name="Green5">#9BE931</color>
+
+    //Blue
+    <color name="Blue1">#0078B7</color>
+    <color name="Blue2">#0096C8</color>
+    <color name="Blue3">#00B4D7</color>
+    <color name="Blue4">#48CAE4</color>
+    <color name="Blue5">#91E0EF</color>
+    <color name="Delivered_Order">#00C7F2</color>
+
+    //Black
+    <color name="Black1">#000000</color>
+    <color name="Black2">#333333</color>
+    <color name="Black3">#666666</color>
+    <color name="Black4">#999999</color>
+    <color name="Black5">#CCCCCC</color>
+    <color name="White">#FFFFFF</color>
+
+    //Another color
+    <color name="Orange_Alert">#F6BC2F</color>
+    <color name="Green_Alert">#46C646</color>
+    <color name="Pending">#F6BC2F</color>
+    <color name="Confirmed">#0FCA7A</color>
+    <color name="Red_Alert">#FF0000</color>
+    <color name="Cancel_Order">#FF0000</color>
+    <color name="Rejected_Order">#666666</color>
+
+    <color name="light_gray">#E0E0E0</color>
+    <color name="teal_700">#018786</color>
+    <color name="splash_background">#FFFFFF</color> <color name="splash_text">#333333</color>
+
+</resources>

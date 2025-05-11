@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    tools:context=".wholesaler.wholesalerLoginPage.WholesalerSignupPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/wholesalerSignupButton"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/signup_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Signup"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/create_an_account_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Create an Account to get Started"
+                app:layout_constraintTop_toBottomOf="@id/signup_tv" />
+            <TextView
+                android:id="@+id/tv_businessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Name"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/create_an_account_tv"/>
+            <EditText
+                android:id="@+id/business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Business Name"
+                app:layout_constraintTop_toBottomOf="@id/tv_businessName"/>
+            <TextView
+                android:id="@+id/tv_businessRegistrationNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Registration Number"
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+
+                app:layout_constraintTop_toBottomOf="@id/business_name"/>
+            <EditText
+                android:id="@+id/businessRegistrationNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Registration Number"
+                app:layout_constraintTop_toBottomOf="@id/tv_businessRegistrationNumber"/>
+
+            <TextView
+                android:id="@+id/tv_ownerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Name"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/businessRegistrationNumber"/>
+
+            <EditText
+                android:id="@+id/owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Owner Name"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_ownerName" />
+
+
+
+
+            <TextView
+                android:id="@+id/tv_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/owner_name"/>
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Contact Number"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_contact_number" />
+            <TextView
+                android:id="@+id/tv_emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/contactNumber"/>
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Email Address"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_emailAddress" />
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/emailAddress"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Password"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_password" />
+            <TextView
+                android:id="@+id/tv_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/password"/>
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_text_bg"
+                android:padding="16dp"
+                android:hint="Enter Confirm Password"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_confirmPassword" />
+
+
+            <CheckBox
+                android:id="@+id/signup_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirmPassword" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="I've read and agree with the Terms and "
+                app:layout_constraintStart_toEndOf="@+id/signup_checkbox"
+                app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Conditions and the Privacy Policy."
+                app:layout_constraintStart_toEndOf="@+id/signup_checkbox"
+                app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/wholesalerSignupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

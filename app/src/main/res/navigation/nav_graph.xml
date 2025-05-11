@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/loginMainScreen"
+        android:name="com.example.dealtrack.loginMainScreen.LoginMainScreen"
+        android:label="fragment_login_main_screen"
+        tools:layout="@layout/fragment_login_main_screen" >
+        <action
+            android:id="@+id/action_loginMainScreen_to_wholesalerMainScreen"
+            app:destination="@id/wholesalerMainScreen" />
+        <action
+            android:id="@+id/action_loginMainScreen_to_wholesalerSignupPage"
+            app:destination="@id/wholesalerSignupPage" />
+        <action
+            android:id="@+id/action_loginMainScreen_to_retailerSignUpPage"
+            app:destination="@id/retailerSignUpPage" />
+        <action
+            android:id="@+id/action_loginMainScreen_to_retailerMainScreen"
+            app:destination="@id/retailerMainScreen" />
+        <action
+            android:id="@+id/action_loginMainScreen_to_retailerProductPage"
+            app:destination="@id/retailerProductPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/retailerCartPage"
+        android:name="com.example.dealtrack.retailer.retailerCartPage.RetailerCartPage"
+        android:label="fragment_retailer_cart_page"
+        tools:layout="@layout/fragment_retailer_cart_page" />
+    <fragment
+        android:id="@+id/retailerLoginPage"
+        android:name="com.example.dealtrack.retailer.retailerLoginPage.RetailerLoginPage"
+        android:label="fragment_retailer_login_page"
+        tools:layout="@layout/fragment_retailer_login_page" />
+    <fragment
+        android:id="@+id/retailerProductPage"
+        android:name="com.example.dealtrack.retailer.retailerProductPage.RetailerProductPage"
+        android:label="fragment_retailer_product_page"
+        tools:layout="@layout/fragment_retailer_product_page" />
+    <fragment
+        android:id="@+id/retailerOrderPage"
+        android:name="com.example.dealtrack.retailer.retailerOrderPage.RetailerOrderPage"
+        android:label="fragment_retailer_order_page"
+        tools:layout="@layout/fragment_retailer_order_page" />
+    <fragment
+        android:id="@+id/wholesalerInventoryPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerInventoryPage.WholesalerInventoryPage"
+        android:label="fragment_wholesaler_inventory_page"
+        tools:layout="@layout/fragment_wholesaler_inventory_page" >
+        <action
+            android:id="@+id/action_wholesalerInventoryPage_to_wholesalerAddProductPage"
+            app:destination="@id/wholesalerAddProductPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/wholesalerHomePage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerHomePage.WholesalerHomePage"
+        android:label="fragment_wholesaler_home_page"
+        tools:layout="@layout/fragment_wholesaler_home_page" />
+    <fragment
+        android:id="@+id/wholesalerLoginPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerLoginPage.WholesalerLoginPage"
+        android:label="fragment_wholesaler_login_page"
+        tools:layout="@layout/fragment_wholesaler_login_page" />
+    <fragment
+        android:id="@+id/wholesalerProductPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerProductPage.WholesalerProductPage"
+        android:label="fragment_wholesaler_product_page"
+        tools:layout="@layout/fragment_wholesaler_product_page" />
+    <fragment
+        android:id="@+id/wholesalerOrderPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerOrderPage.WholesalerOrderPage"
+        android:label="fragment_wholesaler_order_page"
+        tools:layout="@layout/fragment_wholesaler_order_page" />
+    <fragment
+        android:id="@+id/wholesalerSignupPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerLoginPage.WholesalerSignupPage"
+        android:label="fragment_wholesaler_signup_page"
+        tools:layout="@layout/fragment_wholesaler_signup_page" >
+        <action
+            android:id="@+id/action_wholesalerSignupPage_to_loginMainScreen"
+            app:destination="@id/loginMainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.dealtrack.SplashScreen"
+        android:label="fragment_wholesaler_tracking_page"
+        tools:layout="@layout/fragment_splash_screen_page" >
+        <action
+            android:id="@+id/action_splashScreen_to_loginMainScreen"
+            app:destination="@id/loginMainScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_retailerMainScreen"
+            app:destination="@id/retailerMainScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_wholesalerMainScreen"
+            app:destination="@id/wholesalerMainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/wholesalerMainScreen"
+        android:name="com.example.dealtrack.wholesaler.wholesalerMainScreen.WholesalerMainScreen"
+        android:label="fragment_whosaler_main_screen"
+        tools:layout="@layout/fragment_wholesaler_main_screen" >
+        <action
+            android:id="@+id/action_wholesalerMainScreen_to_loginMainScreen"
+            app:destination="@id/loginMainScreen" />
+        <action
+            android:id="@+id/action_wholesalerMainScreen_to_wholesalerAddProductPage"
+            app:destination="@id/wholesalerAddProductPage" />
+        <action
+            android:id="@+id/action_wholesalerMainScreen_to_wholesalerOrderDetail"
+            app:destination="@id/wholesalerOrderDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/retailerSignUpPage"
+        android:name="com.example.dealtrack.retailer.retailerLoginPage.RetailerSignUpPage"
+        android:label="fragment_retailer_sign_up_page"
+        tools:layout="@layout/fragment_retailer_sign_up_page" >
+        <action
+            android:id="@+id/action_retailerSignUpPage_to_loginMainScreen"
+            app:destination="@id/loginMainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/retailerHomePage"
+        android:name="com.example.dealtrack.retailer.retailerHomePage.RetailerHomePage"
+        android:label="fragment_retailer_home_page"
+        tools:layout="@layout/fragment_retailer_home_page" />
+    <fragment
+        android:id="@+id/retailerMainScreen"
+        android:name="com.example.dealtrack.retailer.retailerMainScreen.RetailerMainScreen"
+        android:label="fragment_retailer_main_screen"
+        tools:layout="@layout/fragment_retailer_main_screen" >
+        <action
+            android:id="@+id/action_retailerMainScreen_to_orderSummary"
+            app:destination="@id/orderSummary" />
+        <action
+            android:id="@+id/action_retailerMainScreen_to_retailerOrderDetail"
+            app:destination="@id/retailerOrderDetail" />
+        <action
+            android:id="@+id/action_retailerMainScreen_to_loginMainScreen"
+            app:destination="@id/loginMainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/wholesalerAddProductPage"
+        android:name="com.example.dealtrack.wholesaler.wholesalerProductPage.WholesalerAddProductPage"
+        android:label="fragment_wholesaler_add_product_page"
+        tools:layout="@layout/fragment_wholesaler_add_product_page" >
+        <argument
+            android:name="productId"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummary"
+        android:name="com.example.dealtrack.retailer.retailerOrderPage.ordering.OrderSummary"
+        android:label="OrderSummary" >
+        <action
+            android:id="@+id/action_orderSummary_to_enterAddress"
+            app:destination="@id/enterAddress" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterAddress"
+        android:name="com.example.dealtrack.retailer.retailerOrderPage.ordering.EnterAddress"
+        android:label="EnterAddress" >
+        <action
+            android:id="@+id/action_enterAddress_to_orderSummary"
+            app:destination="@id/orderSummary" />
+    </fragment>
+    <fragment
+        android:id="@+id/retailerOrderDetail"
+        android:name="com.example.dealtrack.retailer.retailerOrderPage.RetailerOrderDetail"
+        android:label="RetailerOrderDetail" >
+        <argument
+            android:name="orderId"
+            app:argType="string"
+           />
+    </fragment>
+    <fragment
+        android:id="@+id/wholesalerOrderDetail"
+        android:name="com.example.dealtrack.wholesaler.wholesalerOrderPage.WholesalerOrderDetail"
+        android:label="WholesalerOrderDetail" >
+        <argument
+            android:name="orderId"
+            app:argType="string"
+            />
+        <argument
+            android:name="retailerId"
+            app:argType="string"
+            />
+    </fragment>
+</navigation>
